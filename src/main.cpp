@@ -80,7 +80,7 @@ int main(int argc, char* argv[]) {
 
     std::string data = readFile(argv[1]);
 
-    memset(program_memory, 0, memory_size * sizeof(program_memory));
+    memset(program_memory, 0, memory_size * sizeof(*program_memory));
 
     loadProgram(data);
 
